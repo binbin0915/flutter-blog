@@ -26,7 +26,7 @@ class _ArticlePageState extends State<ArticlePage> {
       data = v;
       List<String> splits = data.split("---");
       if(splits.length == 3){
-        data = splits[2];
+        data = splits[2]
       }
       setState(() {});
     });
@@ -55,7 +55,7 @@ class _ArticlePageState extends State<ArticlePage> {
                     Container(
                       child: Text(
                         widget.bean.articleName,
-                        style: theme.textTheme.headline5,
+                        style: theme.textTheme.headline,
                       ),
                       alignment: Alignment.center,
                     ),
